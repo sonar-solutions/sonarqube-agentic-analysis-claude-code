@@ -199,7 +199,7 @@ A successful setup produces this sequence:
 
 ## Limitations and known issues
 
-- **SonarQube Cloud only.** Agentic Analysis is not available on [SonarQube Server](https://www.sonarsource.com/products/sonarqube/server/).
+- **SonarQube Cloud only.** Agentic Analysis is not yet available on [SonarQube Server](https://www.sonarsource.com/products/sonarqube/server/).
 - **Requires a CI scan after enablement.** The project must have at least one completed CI analysis run after the SonarQube Agentic Analysis was enabled. Without this, no cached context exists for the static code analysis engine.
 - **File paths must be project-relative.** Pass `src/main/java/com/example/Foo.java`, not `/Users/you/project/src/main/java/com/example/Foo.java`.
 - **Branch must have a completed CI analysis.** The `branchName` parameter must match a branch that SonarQube Cloud has analyzed.
